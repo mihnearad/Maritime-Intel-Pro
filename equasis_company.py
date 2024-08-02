@@ -4,6 +4,7 @@ import os
 import pandas as pd
 from io import StringIO
 
+
 def fetch_fleet_info(company_identifier):
     email = os.getenv("EMAIL")
     password = os.getenv("PASSWORD")
@@ -49,7 +50,3 @@ def fetch_fleet_info(company_identifier):
 
     return all_fleet_data
 
-# Example usage
-company_identifier = "5808451"
-fleet_info = fetch_fleet_info(company_identifier)
-print(fleet_info)

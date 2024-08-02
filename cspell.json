@@ -1,0 +1,16 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "dataframe",
+        "equasis",
+        "Equasis",
+        "openai",
+        "selectbox",
+        "streamlit"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
