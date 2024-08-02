@@ -1,6 +1,6 @@
-# Equasis Data Fetcher
+# Maritime Intel Pro
 
-The Equasis Data Fetcher is a Streamlit-based web application designed to retrieve and analyze maritime vessel information from the Equasis database. It offers functionalities for fetching detailed information about vessels and entire fleets, and it provides an interface for querying this data using natural language questions powered by OpenAI.
+Maritime Intel Pro is a Streamlit-based web application designed to retrieve and analyze maritime vessel information from the Equasis database. It offers functionalities for fetching detailed information about vessels and entire fleets, and it provides an interface for querying this data using natural language questions powered by OpenAI.
 
 At the moment it's only querying data from: equasis.org
 
