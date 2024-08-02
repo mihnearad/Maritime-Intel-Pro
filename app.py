@@ -14,17 +14,17 @@ if not openai_api_key:
 
 # Initialize OpenAI language model
 llm = OpenAI(api_token=openai_api_key, model="gpt-3.5-turbo")
-st.set_page_config(page_title='Data Grabber',layout='wide')
-st.title('Equasis Data Fetcher')
+st.set_page_config(page_title='Maritime Intel Pro',layout='wide')
+st.title('Maritime Intel Pro')
 
 if 'fleet_data' not in st.session_state:
     st.session_state.fleet_data = pd.DataFrame()
 
 st.sidebar.title("Query Options")
-query_type = st.sidebar.selectbox("Choose a query type", ["Vessel Info", "Fleet Info", "Data Query"])
+query_type = st.sidebar.selectbox("Choose a query type", ["Vessel Info", "Fleet Info"])
 
 if query_type == "Fleet Info":
-    company_identifier = st.sidebar.text_input("Enter Company Identifier:", "")
+    company_identifier = st.sidebar.text_input("Enter Company Identifier (found on Equasis):", "")
     if st.sidebar.button("Fetch Fleet Info"):
         st.session_state.fleet_data = fetch_fleet_info(company_identifier)
     if not st.session_state.fleet_data.empty:
